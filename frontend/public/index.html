@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#5262f5" />
+  <meta name="description" content="ChatApp - Real-time messaging app" />
+  <link rel="icon" type="image/x-icon" href="chat icon.png" />
+  <title>ChatApp</title>
+  <script>
+    // Apply dark mode before paint to prevent flash
+    (function () {
+      const theme = localStorage.getItem('chatapp_theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (theme === 'dark' || (!theme && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
