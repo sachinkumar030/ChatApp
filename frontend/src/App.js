@@ -8,6 +8,8 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import ChatPage from './pages/ChatPage';
 
+
+
 // Protected route wrapper
 function PrivateRoute({ children }) {
   const { isAuthenticated, loading } = useAuth();
